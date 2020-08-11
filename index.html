@@ -15,6 +15,25 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <h1>Upload an Image to Apply Filter</h1>
+
+        <h2>Source Image</h2>
+        <canvas id="c1"></canvas><br><br>
+        <input type="file" multiple="false" accept="image/*" id="img_input" onchange="upload_img()"><br><br>
+
+        <input type="button" id="grayscale" value="Make Grayscale" onclick="doGray()">
+        <input type="button" id="red" value="Make Red" onclick="doRed()">
+        <input type="button" id="rainbow" value="Make Rainbow" onclick="doRainbow()">
+        <input type="button" id="blur" value="Make Blur" onclick="doBlur()"><br><br>
+        <input type="button" id="border" value="Make Border" onclick="doBorder()"><br><br>
+        <input type="color" value="#005726" id="clr" onchange="doColor()">
+        <input type="range" min="10" max="100" value="10" id="sldr" oninput="doWidth()"><br><br>
+
+        <input type="button" id="reset" value="Reset Image" onclick="reset()">
+  
+
+
+
         <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
         <script src="action.js" async defer></script>
     </body>
