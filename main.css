@@ -31,8 +31,7 @@ h1 {
 }
 
 canvas {
-    width: 400px;
-    height: 200px;
+    width: 100%;
     border: 5px solid rgb(139, 8, 80);
     background-color: cornsilk;
 }
